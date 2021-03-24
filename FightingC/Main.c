@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <math.h>
 #include "C1.h"
+#include "Q11.h"
 
 int main(void) {
-	//C1-1
+	//C1-1(도전 프로그래밍1)
 	/*TransIntToHex();
 	*/
 
@@ -60,6 +61,31 @@ int main(void) {
 
 	int powerOfTwoValue = GetPowerOfTwoRecursive(n2, 1);
 	printf("2 ^ %d = %d\n", n2, powerOfTwoValue);*/
+
+	//Q11-1_1
+	/*printf("\n");
+	printf("----------C11-1_1----------\n");
+	GetMaxMinSum();*/
+
+	//Q11-1_2
+	/*printf("\n");
+	printf("----------C11-1_2----------\n");
+	PrintGoodTime();*/
+
+	//Q11-2_1
+	/*printf("\n");
+	printf("----------C11-2_1----------\n");
+	PrintStringLength();*/
+
+	//Q11-2_2
+	/*printf("\n");
+	printf("----------C11-2_2----------\n");
+	PrintStringReverse();*/
+
+	//Q11-2_3
+	printf("\n");
+	printf("----------C11-2_3----------\n");
+	PrintMaxAscii();
 
 	return;
 }
