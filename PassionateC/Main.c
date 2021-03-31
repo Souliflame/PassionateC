@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <math.h>
+
 #include "C1.h"
+#include "C2.h"
+
 #include "Q11.h"
 #include "Q13.h"
 #include "Q14.h"
@@ -132,7 +135,16 @@ int main(void) {
 		printf("1번 %d, 2번 %d, 3번 %d\n", num1, num2, num3);
 	}*/
 
-
+	//C2-1
+	{
+		int* arr[10];
+		for (int i = 0; i < 10; ++i) {
+			printf("입력 %d:", i + 1);
+			scanf_s("%d", (arr + i));
+		}
+		PrintOddInArray(arr, 10);
+		PrintEvenInArray(arr, 10);
+	}
 
 	return;
 }

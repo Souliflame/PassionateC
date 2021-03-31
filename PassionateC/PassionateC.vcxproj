@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C1.c" />
+    <ClCompile Include="C2.c" />
     <ClCompile Include="Main.c" />
     <ClCompile Include="Q11.c" />
     <ClCompile Include="Q13.c" />
@@ -27,6 +28,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C1.h" />
+    <ClInclude Include="C2.h" />
     <ClInclude Include="Q11.h" />
     <ClInclude Include="Q13.h" />
     <ClInclude Include="Q14.h" />
