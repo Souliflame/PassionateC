@@ -2,6 +2,7 @@
 #include <math.h>
 #include "C1.h"
 #include "Q11.h"
+#include "Q13.h"
 
 int main(void) {
 	//C1-1(도전 프로그래밍1)
@@ -83,9 +84,30 @@ int main(void) {
 	PrintStringReverse();*/
 
 	//Q11-2_3
-	printf("\n");
+	/*printf("\n");
 	printf("----------C11-2_3----------\n");
-	PrintMaxAscii();
+	PrintMaxAscii();*/
+
+	//Q13-1_1
+	/*printf("\n");
+	printf("----------C13-1_1----------\n");
+	accessArrayWithPointerToPlusAddress();*/
+
+	//Q13-1_2
+	/*printf("\n");
+	printf("----------C13-1_2----------\n");
+	accessArrayWithPointerToPlusValue();*/
+
+	//Q13-1_3
+	/*printf("\n");
+	printf("----------C13-1_3----------\n");
+	accessArrayWithPointerToMinusAddress();*/
+
+	//Q13-1_4
+	/*printf("\n");
+	printf("----------C13-1_4----------\n");
+	accessArrayWithPointerToSwap();*/
+
 
 	return;
 }
