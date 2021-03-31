@@ -3,6 +3,7 @@
 #include "C1.h"
 #include "Q11.h"
 #include "Q13.h"
+#include "Q14.h"
 
 int main(void) {
 	//C1-1(도전 프로그래밍1)
@@ -107,6 +108,30 @@ int main(void) {
 	/*printf("\n");
 	printf("----------C13-1_4----------\n");
 	accessArrayWithPointerToSwap();*/
+
+	//Q14-1_1
+	/*printf("\n");
+	printf("----------C14-1_1----------\n");
+
+	{
+		int num = 10;
+		printf("%d의 제곱은 %d\n", num, SquareByValue(num));
+		SquareByReference(&num);
+		printf("Call by Reference로 제곱 %d", num);
+	}*/
+
+	//Q14-1_2
+	/*printf("\n");
+	printf("----------C14-1_2----------\n");
+	{
+		int num1 = 10;
+		int num2 = 20;
+		int num3 = 30;
+		printf("1번 %d, 2번 %d, 3번 %d > 1번 %d, 2번 %d, 3번 %d 로 변경\n", num1, num2, num3, num3, num1, num2);
+		Swap3(&num1, &num2, &num3);
+		printf("1번 %d, 2번 %d, 3번 %d\n", num1, num2, num3);
+	}*/
+
 
 
 	return;
