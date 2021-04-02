@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 void ShowArray(int* arr, int len) {
 	for (int i = 0; i < len; ++i) {
@@ -84,3 +85,24 @@ void GetOddFrontEvenRear(void) {
 	return;
 }
 
+//[C2-4] 영단어를 인자로 전달받아 회문인지 아닌지 판단하는 함수
+void CheckPalindrome(char* str, int len) {
+
+	bool isPalindrome = true;
+
+	for (int i = 0; i < len / 2; ++i) {
+		if (str[i] != str[len - 1 - i]) {
+			isPalindrome = false;
+			break;
+		}
+	}
+
+	printf("문자열 입력: %s\n", str);
+
+	if (isPalindrome) {
+		printf("회문 입니다.\n");
+	}
+	else {
+		printf("회문이 아닙니다.\n");
+	}
+}

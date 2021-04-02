@@ -21,3 +21,5 @@ void PrintDecimalToBinary(int num);
 */
 void GetOddFrontEvenRear(void);
 
+//[C2-4] 영단어를 인자로 전달받아 회문인지 아닌지 판단하는 함수
+void CheckPalindrome(char* str, int len);

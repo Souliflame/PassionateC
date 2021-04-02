@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 #include <math.h>
 #include <limits.h>
 
@@ -168,6 +169,31 @@ int main(void) {
 	GetOddFrontEvenRear();
 	}*/
 
+	//C2-4
+	/*{
+		printf("\n");
+		printf("----------C2-4----------\n");
+
+		printf("문자열(32자 제한) 입력: ");
+		char str[33];
+		scanf_s("%s", str, sizeof(str));
+
+		int idx = 0;
+		while (true) {
+			if (str[idx] == '\0') {
+				break;
+			}
+			idx++;
+		}
+
+		CheckPalindrome(str, idx);
+	}*/
+
+	//C2-5
+	{
+		printf("\n");
+		printf("----------C2-5----------\n");
+	}
 
 	return;
 }
