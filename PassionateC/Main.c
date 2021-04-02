@@ -190,10 +190,23 @@ int main(void) {
 	}*/
 
 	//C2-5
-	{
+	/*{
 		printf("\n");
 		printf("----------C2-5----------\n");
-	}
+
+		printf("정수 7개 입력\n");
+		int arr[7];
+		for (int i = 0; i < 7; ++i) {
+			printf("입력 %d: ", i + 1);
+			scanf_s("%d", &arr[i]);
+		}
+
+		BubbleSort(arr, 7, true);
+		ShowArray(arr, 7);
+
+		BubbleSort(arr, 7, false);
+		ShowArray(arr, 7);
+	}*/
 
 	return;
 }

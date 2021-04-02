@@ -1,6 +1,7 @@
 //도전! 프로그래밍2
 
 void ShowArray(int* arr, int len);
+void Swap(int* num1, int* num2);
 
 /*
 [C2-1] 길이 10인 배열 선언, 총 10개의 정수 입력받음
@@ -23,3 +24,6 @@ void GetOddFrontEvenRear(void);
 
 //[C2-4] 영단어를 인자로 전달받아 회문인지 아닌지 판단하는 함수
 void CheckPalindrome(char* str, int len);
+
+//[C2-5] Bubble Sort 오름차순, 내림차순 함수
+void BubbleSort(int arr[], int len, bool isAsc);

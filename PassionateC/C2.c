@@ -1,10 +1,21 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-void ShowArray(int* arr, int len) {
+void ShowArray(int arr[], int len) {
 	for (int i = 0; i < len; ++i) {
-		printf("%d ", *(arr + i));
+		printf("%d ", arr[i]);
 	}
+	printf("\n");
+
+	return;
+}
+
+void Swap(int* num1, int* num2) {
+	*num1 ^= *num2;
+	*num2 ^= *num1;
+	*num1 ^= *num2;
+
+	return;
 }
 
 /*
@@ -105,4 +116,33 @@ void CheckPalindrome(char* str, int len) {
 	else {
 		printf("회문이 아닙니다.\n");
 	}
+}
+
+//[C2-5] Bubble Sort 오름차순, 내림차순 함수
+void BubbleSort(int arr[], int len, bool isAsc) {
+
+	//while과 for 조합
+	if (isAsc) {
+		int l, r = len - 1;
+		while (0 < r) {
+			for (l = 0; l < r; l++) {
+				if (arr[l] > arr[l + 1]) {
+					Swap(&arr[l], &arr[l + 1]);
+				}
+			}
+			r--;
+		}
+	}
+	//for 반복 2회
+	else {
+		for (int i = 0; i < len - 1; ++i) {
+			for (int j = 0; j < len - i - 1; ++j) {
+				if (arr[j] < arr[j + 1]) {
+					Swap(&arr[j], &arr[j + 1]);
+				}
+			}
+		}
+	}
+
+	return;
 }
