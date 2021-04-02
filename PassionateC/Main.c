@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <limits.h>
 
 #include "C1.h"
 #include "C2.h"
@@ -69,52 +70,52 @@ int main(void) {
 
 	//Q11-1_1
 	/*printf("\n");
-	printf("----------C11-1_1----------\n");
+	printf("----------Q11-1_1----------\n");
 	GetMaxMinSum();*/
 
 	//Q11-1_2
 	/*printf("\n");
-	printf("----------C11-1_2----------\n");
+	printf("----------Q11-1_2----------\n");
 	PrintGoodTime();*/
 
 	//Q11-2_1
 	/*printf("\n");
-	printf("----------C11-2_1----------\n");
+	printf("----------Q11-2_1----------\n");
 	PrintStringLength();*/
 
 	//Q11-2_2
 	/*printf("\n");
-	printf("----------C11-2_2----------\n");
+	printf("----------Q11-2_2----------\n");
 	PrintStringReverse();*/
 
 	//Q11-2_3
 	/*printf("\n");
-	printf("----------C11-2_3----------\n");
+	printf("----------Q11-2_3----------\n");
 	PrintMaxAscii();*/
 
 	//Q13-1_1
 	/*printf("\n");
-	printf("----------C13-1_1----------\n");
+	printf("----------Q13-1_1----------\n");
 	accessArrayWithPointerToPlusAddress();*/
 
 	//Q13-1_2
 	/*printf("\n");
-	printf("----------C13-1_2----------\n");
+	printf("----------Q13-1_2----------\n");
 	accessArrayWithPointerToPlusValue();*/
 
 	//Q13-1_3
 	/*printf("\n");
-	printf("----------C13-1_3----------\n");
+	printf("----------Q13-1_3----------\n");
 	accessArrayWithPointerToMinusAddress();*/
 
 	//Q13-1_4
 	/*printf("\n");
-	printf("----------C13-1_4----------\n");
+	printf("----------Q13-1_4----------\n");
 	accessArrayWithPointerToSwap();*/
 
 	//Q14-1_1
 	/*printf("\n");
-	printf("----------C14-1_1----------\n");
+	printf("----------Q14-1_1----------\n");
 
 	{
 		int num = 10;
@@ -125,7 +126,7 @@ int main(void) {
 
 	//Q14-1_2
 	/*printf("\n");
-	printf("----------C14-1_2----------\n");
+	printf("----------Q14-1_2----------\n");
 	{
 		int num1 = 10;
 		int num2 = 20;
@@ -136,15 +137,38 @@ int main(void) {
 	}*/
 
 	//C2-1
-	{
+	/*{
+		printf("\n");
+		printf("----------C2-1----------\n");
+
 		int* arr[10];
+		const int* const ptr = &arr[0];
 		for (int i = 0; i < 10; ++i) {
 			printf("입력 %d:", i + 1);
-			scanf_s("%d", (arr + i));
+			scanf_s("%d", (ptr + i));
 		}
-		PrintOddInArray(arr, 10);
-		PrintEvenInArray(arr, 10);
-	}
+
+		PrintOddInArray(ptr, 10);
+		PrintEvenInArray(ptr, 10);
+	}*/
+
+	//C2-2
+	/*{
+		printf("0을 포함한 양의 정수 입력: ");
+		int num;
+		scanf_s("%d", &num);
+		PrintDecimalToBinary(num);
+	}*/
+
+	//C2-3
+	/*{
+	printf("\n");
+	printf("----------C2-3----------\n");
+
+	GetOddFrontEvenRear();
+	}*/
+
 
 	return;
 }
+
