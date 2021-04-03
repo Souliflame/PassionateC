@@ -9,6 +9,7 @@
 #include "Q11.h"
 #include "Q13.h"
 #include "Q14.h"
+#include "Q16.h"
 
 int main(void) {
 	//C1-1(도전 프로그래밍1)
@@ -207,6 +208,22 @@ int main(void) {
 		BubbleSort(arr, 7, false);
 		ShowArray(arr, 7);
 	}*/
+
+	//Q16-1_1
+	/*{
+		printf("\n");
+		printf("----------Q16-1_1----------\n");
+
+		GetTablesOfTwoToFour();
+	}*/
+
+	//Q16-1_2
+	{
+		printf("\n");
+		printf("----------Q16-1_2----------\n");
+
+		GetMatrixRotated();
+	}
 
 	return;
 }
