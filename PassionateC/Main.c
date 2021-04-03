@@ -218,11 +218,19 @@ int main(void) {
 	}*/
 
 	//Q16-1_2
-	{
+	/*{
 		printf("\n");
 		printf("----------Q16-1_2----------\n");
 
 		GetMatrixRotated();
+	}*/
+
+	//Q16-1_3
+	{
+		printf("\n");
+		printf("----------Q16-1_3----------\n");
+
+		WriteRecord();
 	}
 
 	return;
