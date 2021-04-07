@@ -36,6 +36,9 @@
     <ClCompile Include="Q16.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Q17.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Q14.h">
@@ -54,6 +57,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Q16.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Q17.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

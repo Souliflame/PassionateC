@@ -10,6 +10,7 @@
 #include "Q13.h"
 #include "Q14.h"
 #include "Q16.h"
+#include "Q17.h"
 
 int main(void) {
 	//C1-1(도전 프로그래밍1)
@@ -226,11 +227,30 @@ int main(void) {
 	}*/
 
 	//Q16-1_3
-	{
+	/*{
 		printf("\n");
 		printf("----------Q16-1_3----------\n");
 
 		WriteRecord();
+	}*/
+
+	//Q17-1_1
+	{
+		printf("\n");
+		printf("----------Q17-1_1----------\n");
+
+		int* maxPtr;
+		int* minPtr;
+		int arr[5];
+
+		for (int i = 0; i < 5; ++i) {
+			printf("정수 입력 %d: ", i + 1);
+			scanf_s("%d", &arr[i]);
+		}
+
+		MaxAndMin(&maxPtr, &minPtr, arr, 5);
+		printf("최대: %d, 최소: %d \n", *maxPtr, *minPtr);
+
 	}
 
 	return;

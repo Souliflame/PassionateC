@@ -26,6 +26,7 @@
     <ClCompile Include="Q13.c" />
     <ClCompile Include="Q14.c" />
     <ClCompile Include="Q16.c" />
+    <ClCompile Include="Q17.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C1.h" />
@@ -34,6 +35,7 @@
     <ClInclude Include="Q13.h" />
     <ClInclude Include="Q14.h" />
     <ClInclude Include="Q16.h" />
+    <ClInclude Include="Q17.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
