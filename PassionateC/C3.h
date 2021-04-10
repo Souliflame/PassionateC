@@ -9,4 +9,3 @@ void Show2DArray(int(*arr)[4]);
 */
 void Set4x4Arr(int arr[][4]);
 void RotateR90Arr(int arr[][4]);
-

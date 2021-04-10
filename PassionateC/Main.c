@@ -5,6 +5,7 @@
 
 #include "C1.h"
 #include "C2.h"
+#include "C3.h"
 
 #include "Q11.h"
 #include "Q13.h"
@@ -235,7 +236,7 @@ int main(void) {
 	}*/
 
 	//Q17-1_1
-	{
+	/*{
 		printf("\n");
 		printf("----------Q17-1_1----------\n");
 
@@ -250,9 +251,31 @@ int main(void) {
 
 		MaxAndMin(&maxPtr, &minPtr, arr, 5);
 		printf("최대: %d, 최소: %d \n", *maxPtr, *minPtr);
+	}*/
 
+	//C3-1
+	{
+		printf("\n");
+		printf("----------C3-1----------\n");
+		int arr[4][4];
+
+		Set4x4Arr(arr);
+		Show2DArray(arr);
+		printf("\n");
+
+		RotateR90Arr(arr);
+		Show2DArray(arr);
+		printf("\n");
+
+		RotateR90Arr(arr);
+		Show2DArray(arr);
+		printf("\n");
+
+		RotateR90Arr(arr);
+		Show2DArray(arr);
+		printf("\n");
 	}
+
 
 	return;
 }
-
