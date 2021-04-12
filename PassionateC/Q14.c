@@ -34,10 +34,10 @@ void ShowAllData(const int* arr, int len) {
 }
 
 // [Q14-2_2] 아래 예제에서 지적할만한 사항은 무엇인가?
-void ShowData(const int* ptr) {
-	int* rptr = ptr;	// int 포인터 선언 후 ptr 주소를 가져옴
-	printf("%d \n", *rptr);	// rptr을 통해 ptr에 있는 값을 보여줌
-	*rptr = 20;		// rptr을 통해 ptr값을 수정해버림
-
-	//즉 Show만 해줘야하는데 값을 수정하게 되었음, const 선언이 무의미해짐
-}
+//void ShowData(const int* ptr) {
+//	int* rptr = ptr;	// int 포인터 선언 후 ptr 주소를 가져옴
+//	printf("%d \n", *rptr);	// rptr을 통해 ptr에 있는 값을 보여줌
+//	*rptr = 20;		// rptr을 통해 ptr값을 수정해버림
+//
+//	//즉 Show만 해줘야하는데 값을 수정하게 되었음, const 선언이 무의미해짐
+//}

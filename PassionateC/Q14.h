@@ -12,4 +12,4 @@ void Swap3(int* num1, int* num2, int* num3);
 void ShowAllData(const int* arr, int len);
 
 // [Q14-2_2] 아래 예제에서 지적할만한 사항은 무엇인가?
-void ShowData(const int* ptr);
+//void ShowData(const int* ptr);
