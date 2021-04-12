@@ -15,3 +15,8 @@ void RotateR90Arr(int arr[][4]);
  숫자 n을 입력받은 후, n*n의 달팽이 배열 출력
 */
 void PrintSnailArr(void);
+
+/*
+[C3-3] 0이상 RAND_MAX 이하의 난수 5개 생성 (범위 0~99)
+*/
+void PrintRand1To99(void);

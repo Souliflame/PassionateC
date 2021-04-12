@@ -276,12 +276,20 @@ int main(void) {
 		printf("\n");
 	}*/
 
-	//C3-1
-	{
+	//C3-2
+	/*{
 		printf("\n");
 		printf("----------C3-2----------\n");
 
 		PrintSnailArr();
+	}*/
+
+	//C3-3
+	{
+		printf("\n");
+		printf("----------C3-3----------\n");
+
+		PrintRand1To99();
 	}
 
 	return;

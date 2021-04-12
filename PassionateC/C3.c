@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 //도전! 프로그래밍3
 
 void Show2DArray(int(*arr)[4]) {
@@ -94,6 +95,17 @@ void PrintSnailArr(void) {
 			printf("%3d ", arr[i][j]);
 		}
 		printf("\n");
+	}
+
+	return;
+}
+
+/*
+[C3-3] 0이상 RAND_MAX 이하의 난수 5개 생성 (범위 0~99)
+*/
+void PrintRand1To99(void) {
+	for (int i = 1; i <= 5; ++i) {
+		printf("%d번째 난수: %d\n", i, rand() % 100);
 	}
 
 	return;
