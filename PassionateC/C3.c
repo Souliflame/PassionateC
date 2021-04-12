@@ -26,7 +26,6 @@ void Set4x4Arr(int arr[][4]) {
 
 	return;
 }
-
 void RotateR90Arr(int arr[][4]) {
 
 	for (int i = 0; i < 2; ++i) {
@@ -43,6 +42,58 @@ void RotateR90Arr(int arr[][4]) {
 			arr[j][i] ^= arr[i][j];
 			arr[i][j] ^= arr[j][i];
 		}
+	}
+
+	return;
+}
+
+/*
+ [C3-2] 달팽이 배열을 출력하는 함수
+ 숫자 n을 입력받은 후, n*n의 달팽이 배열 출력
+*/
+void PrintSnailArr(void) {
+
+	//MS VS에선 C99의 가변배열 선언이 불가능하여 길이50*50의 Array로 대체
+	int arr[50][50];
+
+	int len;
+	printf("배열 길이 입력(1~50): ");
+	scanf_s("%d", &len);
+	if (len <= 0) {
+		return;
+	}
+
+	int value = 1;
+	int offset = 0;
+	while (value <= len * len) {
+		//상단 오른쪽으로(→)
+		for (int x = offset; x < len - offset; ++x) {
+			arr[offset][x] = value++;
+		}
+
+		//우측 아래로(↓)
+		for (int y = 1 + offset; y < len - offset; ++y) {
+			arr[y][len - 1 - offset] = value++;
+		}
+
+		//하단 왼쪽으로(←)
+		for (int x = len - 2 - offset; x >= offset; --x) {
+			arr[len - 1 - offset][x] = value++;
+		}
+
+		//좌측 위로(↑)
+		for (int y = len - 2 - offset; y >= 1 + offset; --y) {
+			arr[y][offset] = value++;
+		}
+
+		offset++;
+	}
+
+	for (int i = 0; i < len; ++i) {
+		for (int j = 0; j < len; ++j) {
+			printf("%3d ", arr[i][j]);
+		}
+		printf("\n");
 	}
 
 	return;

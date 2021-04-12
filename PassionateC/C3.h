@@ -9,3 +9,9 @@ void Show2DArray(int(*arr)[4]);
 */
 void Set4x4Arr(int arr[][4]);
 void RotateR90Arr(int arr[][4]);
+
+/*
+ [C3-2] 달팽이 배열을 출력하는 함수
+ 숫자 n을 입력받은 후, n*n의 달팽이 배열 출력
+*/
+void PrintSnailArr(void);

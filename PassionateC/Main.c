@@ -254,7 +254,7 @@ int main(void) {
 	}*/
 
 	//C3-1
-	{
+	/*{
 		printf("\n");
 		printf("----------C3-1----------\n");
 		int arr[4][4];
@@ -274,8 +274,15 @@ int main(void) {
 		RotateR90Arr(arr);
 		Show2DArray(arr);
 		printf("\n");
-	}
+	}*/
 
+	//C3-1
+	{
+		printf("\n");
+		printf("----------C3-2----------\n");
+
+		PrintSnailArr();
+	}
 
 	return;
 }
