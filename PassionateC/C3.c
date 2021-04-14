@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 //도전! 프로그래밍3
 
 void Show2DArray(int(*arr)[4]) {
@@ -109,4 +110,17 @@ void PrintRand1To99(void) {
 	}
 
 	return;
+}
+
+/*
+[C3-4] 두개의 주사위를 던졌을 때 결과를 출력하는 프로그램을 작성
+(SRAND 함수와 TIME 함수를 활용)
+*/
+void GetDicesNum(int count) {
+	srand((int)time(NULL));
+
+	for (int i = 1; i <= count; ++i) {
+		int num = (rand() % 6) + 1;
+		printf("%d번째 주사위: %d\n", i, num);
+	}
 }

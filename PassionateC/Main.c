@@ -292,5 +292,17 @@ int main(void) {
 		PrintRand1To99();
 	}
 
+	//C3-4
+	{
+		printf("\n");
+		printf("----------C3-4----------\n");
+		
+		int count;
+		printf("주사위 갯수: ");
+		scanf_s("%d", &count);
+
+		GetDicesNum(count);
+	}
+
 	return;
 }
