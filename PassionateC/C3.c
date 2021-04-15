@@ -238,3 +238,48 @@ void PlayRSP(void) {
 	printf("\n게임의 결과: %d 승, %d 무\n", winCount, drawCount);
 }
 
+/*
+[C3-6] 야구게임 프로그램 작성
+*/
+void PlayBaseballGame(void) {
+
+	srand((int)time(NULL));
+	int comNum[3] = { rand() % 10, rand() % 10, rand() % 10 };
+
+	bool isCorrect = false;
+	int playCount = 1;
+
+	while (!isCorrect) {
+
+		int playerNum[3];
+
+		printf("3개의 숫자 선택: ");
+		scanf_s("%d %d %d", &playerNum[0], &playerNum[1], &playerNum[2]);
+
+		int strike = 0;
+		int ball = 0;
+
+		for (int i = 0; i < 3; ++i) {
+			for (int j = 0; j < 3; ++j) {
+				if (playerNum[i] == comNum[j]) {
+					if (i == j) {
+						strike++;
+					}
+					else {
+						ball++;
+					}
+				}
+			}
+		}
+
+		printf("%d번째 도전 결과: %d Strike, %d Ball\n\n", playCount, strike, ball);
+		playCount++;
+
+		if (strike == 3) {
+			isCorrect = true;
+			printf("Game Over!\n");
+		}
+	}
+
+	return;
+}

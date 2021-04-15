@@ -33,3 +33,8 @@ void GetDicesNum(int count);
 */
 void PrintRSPResult(int result);
 void PlayRSP(void);
+
+/*
+[C3-6] 야구게임 프로그램 작성
+*/
+void PlayBaseballGame(void);

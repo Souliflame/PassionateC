@@ -296,7 +296,7 @@ int main(void) {
 	/*{
 		printf("\n");
 		printf("----------C3-4----------\n");
-		
+
 		int count;
 		printf("주사위 갯수: ");
 		scanf_s("%d", &count);
@@ -305,11 +305,19 @@ int main(void) {
 	}*/
 
 	//C3-5
-	{
+	/*{
 		printf("\n");
 		printf("----------C3-5----------\n");
 
 		PlayRSP();
+	}*/
+
+	//C3-6
+	{
+		printf("\n");
+		printf("----------C3-6----------\n");
+
+		PlayBaseballGame();
 	}
 
 	return;
