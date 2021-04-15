@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdbool.h>
 //도전! 프로그래밍3
 
 void Show2DArray(int(*arr)[4]) {
@@ -124,3 +125,116 @@ void GetDicesNum(int count) {
 		printf("%d번째 주사위: %d\n", i, num);
 	}
 }
+
+//[C3-5] 가위바위보 출력
+void PrintRSPResult(int result) {
+	switch (result) {
+	case -1:
+		printf("졌습니다..\n");
+		break;
+	case 0:
+		printf("비겼습니다.\n");
+		break;
+	case 1:
+		printf("이겼습니다!\n");
+		break;
+	}
+}
+/*
+[C3-5] 가위바위보 프로그램 작성
+질 때까지 플레이 가능하고, 질 경우 이전 성적 출력
+*/
+void PlayRSP(void) {
+
+	bool hasNoDefeat = true;
+
+	int playerCommand;
+	int aiCommand;
+	int winCount = 0;
+	int drawCount = 0;
+
+	char* commandStr[] = { "바위", "가위", "보" };
+
+	srand((int)time(NULL));
+
+	while (hasNoDefeat) {
+		printf("%s는 1, %s는 2, %s는 3: ", commandStr[0], commandStr[1], commandStr[2]);
+		scanf_s("%d", &playerCommand);
+
+		if (playerCommand > 3 || playerCommand < 1) {
+			printf("잘못된 선택입니다. 다시 입력해주세요.\n");
+			continue;
+		}
+
+		playerCommand--;
+		aiCommand = (rand() % 3);
+
+		printf("당신은 %s 선택, 컴퓨터는 %s 선택, ", commandStr[playerCommand], commandStr[aiCommand]);
+
+		switch (playerCommand)
+		{
+		case 0:	//바위
+			switch (aiCommand)
+			{
+			case 0:
+				drawCount++;
+				PrintRSPResult(0);
+				break;
+			case 1:	//가위
+				winCount++;
+				PrintRSPResult(1);
+				break;
+			case 2:	//보
+				hasNoDefeat = false;
+				PrintRSPResult(-1);
+				break;
+			default:
+				break;
+			}
+			break;
+		case 1:	//가위
+			switch (aiCommand)
+			{
+			case 0:	//바위
+				hasNoDefeat = false;
+				PrintRSPResult(-1);
+				break;
+			case 1:	//가위
+				drawCount++;
+				PrintRSPResult(0);
+				break;
+			case 2:	//보
+				winCount++;
+				PrintRSPResult(1);
+				break;
+			default:
+				break;
+			}
+			break;
+		case 2:	//보
+			switch (aiCommand)
+			{
+			case 0:	//바위
+				winCount++;
+				PrintRSPResult(1);
+				break;
+			case 1:	//가위
+				hasNoDefeat = false;
+				PrintRSPResult(-1);
+				break;
+			case 2:	//보
+				drawCount++;
+				PrintRSPResult(0);
+				break;
+			default:
+				break;
+			}
+			break;
+		default:
+			break;
+		}
+	}
+
+	printf("\n게임의 결과: %d 승, %d 무\n", winCount, drawCount);
+}
+

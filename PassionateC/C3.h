@@ -26,3 +26,10 @@ void PrintRand1To99(void);
 (SRAND 함수와 TIME 함수를 활용)
 */
 void GetDicesNum(int count);
+
+/*
+[C3-5] 가위바위보 프로그램 작성
+질 때까지 플레이 가능하고, 질 경우 이전 성적 출력
+*/
+void PrintRSPResult(int result);
+void PlayRSP(void);

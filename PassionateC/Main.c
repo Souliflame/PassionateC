@@ -285,15 +285,15 @@ int main(void) {
 	}*/
 
 	//C3-3
-	{
+	/*{
 		printf("\n");
 		printf("----------C3-3----------\n");
 
 		PrintRand1To99();
-	}
+	}*/
 
 	//C3-4
-	{
+	/*{
 		printf("\n");
 		printf("----------C3-4----------\n");
 		
@@ -302,6 +302,14 @@ int main(void) {
 		scanf_s("%d", &count);
 
 		GetDicesNum(count);
+	}*/
+
+	//C3-5
+	{
+		printf("\n");
+		printf("----------C3-5----------\n");
+
+		PlayRSP();
 	}
 
 	return;
