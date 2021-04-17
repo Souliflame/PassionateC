@@ -313,11 +313,16 @@ int main(void) {
 	}*/
 
 	//C3-6
-	{
+	/*{
 		printf("\n");
 		printf("----------C3-6----------\n");
 
 		PlayBaseballGame();
+	}*/
+
+	//Q21-1_1
+	{
+		
 	}
 
 	return;
